@@ -1,0 +1,46 @@
+{
+  "name": "receipts-model",
+  "version": "0.5.0",
+  "description": "Receipts model.",
+  "main": "./index.js",
+  "dependencies": {
+    "assert-plus": "^0.1.5",
+    "async": "^1.4.2",
+    "winston": "^1.1.1",
+    "winston-loggly": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3"
+  },
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "mocha --recursive test",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --recursive test",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/receipts/npm-receipts-model.git"
+  },
+  "bugs": {
+    "url": "https://github.com/receipts/npm-receipts-model/issues"
+  },
+  "keywords": [
+    "receipts",
+    "lottery"
+  ],
+  "author": {
+    "name": "Zenedith",
+    "email": "zenedith@wp.pl"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/receipts/npm-receipts-model",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "readmeFilename": "README.md",
+  "_id": "receipts-model@0.5.0",
+  "_from": "receipts-model@^0.5.0"
+}
