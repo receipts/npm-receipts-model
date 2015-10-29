@@ -1,4 +1,5 @@
 # receipts-model
+[![npm version](https://badge.fury.io/js/receipts-model.svg)](https://badge.fury.io/js/receipts-model)
 [![bitHound Score](https://www.bithound.io/github/receipts/npm-receipts-model/badges/score.svg)](https://www.bithound.io/github/receipts/npm-receipts-model)
 [![Dependency Status](https://david-dm.org/receipts/npm-receipts-model.svg)](https://david-dm.org/receipts/npm-receipts-model)
 [![devDependency Status](https://david-dm.org/receipts/npm-receipts-model/dev-status.svg)](https://david-dm.org/receipts/npm-receipts-model#info=devDependencies)
