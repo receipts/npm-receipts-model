@@ -28,12 +28,12 @@ module.exports = {
      */
     amountResponse: require('./lib/model/response/amountResponse'),
     /**
-     * the contestTicketsCollectionResponse model and builder.
-     * @property contestTicketsCollectionResponse
-     * @type contestTicketsCollectionResponse
+     * the lotteryTicketsCollectionResponse model and builder.
+     * @property lotteryTicketsCollectionResponse
+     * @type lotteryTicketsCollectionResponse
      * @static
      */
-    contestTicketsCollectionResponse: require('./lib/model/response/contestTicketsCollectionResponse'),
+    lotteryTicketsCollectionResponse: require('./lib/model/response/lotteryTicketsCollectionResponse'),
     /**
      * the ticketResponse model and builder.
      * @property ticketResponse

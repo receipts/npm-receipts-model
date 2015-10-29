@@ -1,4 +1,7 @@
 # receipts-model
+[![bitHound Score](https://www.bithound.io/github/receipts/npm-receipts-model/badges/score.svg)](https://www.bithound.io/github/receipts/npm-receipts-model)
+[![Dependency Status](https://david-dm.org/receipts/npm-receipts-model.svg)](https://david-dm.org/receipts/npm-receipts-model)
+[![devDependency Status](https://david-dm.org/receipts/npm-receipts-model/dev-status.svg)](https://david-dm.org/receipts/npm-receipts-model#info=devDependencies)
 
 Receipts model.
 
@@ -20,16 +23,21 @@ npm test
 
 ## Dependencies
 
-- [assert-plus](https://github.com/mcavage/node-assert-plus): Extra assertions on top of nodes assert module
-- [async](https://github.com/git+https:/): Higher-order functions and common patterns for asynchronous code
-- [winston](https://github.com/git+https:/): A multi-transport async logging library for Node.js
+- [assert-plus](https://github.com/mcavage/node-assert-plus): Extra assertions on top of node&#39;s assert module
+- [async](): Higher-order functions and common patterns for asynchronous code
+- [winston](): A multi-transport async logging library for Node.js
 - [winston-loggly](https://github.com/indexzero/winston-loggly): A Loggly transport for winston
 
 ## Dev Dependencies
 
-- [chai](https://github.com/git+https:/): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
+- [chai](): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [istanbul](https://github.com/gotwarlost/istanbul): Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests. Supports all JS coverage use cases including unit tests, server side functional tests
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
+
+
+## Changelog
+
+[CHANGELOG](CHANGELOG.md)
 
 
 ## License

@@ -12,6 +12,7 @@ describe('ticketRequest model test', function () {
   var phone = 'phone';
   var trade = 'trade';
   var agreements = 'agreements';
+  var email = 'email';
 
   it('should create model', function (done) {
 
@@ -23,7 +24,8 @@ describe('ticketRequest model test', function () {
       taxRegistrationNumber, 
       phone, 
       trade, 
-      agreements
+      agreements, 
+      email
     );
 
     should.exist(ticketRequestModel);
@@ -35,6 +37,7 @@ describe('ticketRequest model test', function () {
     ticketRequestModel.phone.should.be.equal(phone);
     ticketRequestModel.trade.should.be.equal(trade);
     ticketRequestModel.agreements.should.be.equal(agreements);
+    ticketRequestModel.email.should.be.equal(email);
     done();
   });
 
@@ -49,6 +52,7 @@ describe('ticketRequest model test', function () {
       .withPhone(phone)
       .withTrade(trade)
       .withAgreements(agreements)
+      .withEmail(email)
       .build();
 
     should.exist(ticketRequestModel);
@@ -60,6 +64,7 @@ describe('ticketRequest model test', function () {
     ticketRequestModel.phone.should.be.equal(phone);
     ticketRequestModel.trade.should.be.equal(trade);
     ticketRequestModel.agreements.should.be.equal(agreements);
+    ticketRequestModel.email.should.be.equal(email);
     done();
   });
 
