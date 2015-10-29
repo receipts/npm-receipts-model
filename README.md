@@ -1,6 +1,8 @@
 # receipts-model
 [![npm version](https://badge.fury.io/js/receipts-model.svg)](https://badge.fury.io/js/receipts-model)
 [![bitHound Score](https://www.bithound.io/github/receipts/npm-receipts-model/badges/score.svg)](https://www.bithound.io/github/receipts/npm-receipts-model)
+[![Coverage Status](https://coveralls.io/repos/receipts/npm-receipts-model/badge.svg?branch=master&service=github)](https://coveralls.io/github/receipts/npm-receipts-model?branch=master)
+[![Build Status](https://travis-ci.org/receipts/npm-receipts-model.svg)](https://travis-ci.org/receipts/npm-receipts-model)
 [![Dependency Status](https://david-dm.org/receipts/npm-receipts-model.svg)](https://david-dm.org/receipts/npm-receipts-model)
 [![devDependency Status](https://david-dm.org/receipts/npm-receipts-model/dev-status.svg)](https://david-dm.org/receipts/npm-receipts-model#info=devDependencies)
 
