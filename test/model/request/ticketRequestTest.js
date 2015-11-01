@@ -9,8 +9,8 @@ describe('ticketRequest model test', function () {
   var amount = 'amount';
   var date = 'date';
   var taxRegistrationNumber = 'taxRegistrationNumber';
-  var phone = 'phone';
   var trade = 'trade';
+  var phone = 'phone';
   var agreements = 'agreements';
   var email = 'email';
 
@@ -22,8 +22,8 @@ describe('ticketRequest model test', function () {
       amount, 
       date, 
       taxRegistrationNumber, 
-      phone, 
       trade, 
+      phone, 
       agreements, 
       email
     );
@@ -34,8 +34,8 @@ describe('ticketRequest model test', function () {
     ticketRequestModel.amount.should.be.equal(amount);
     ticketRequestModel.date.should.be.equal(date);
     ticketRequestModel.taxRegistrationNumber.should.be.equal(taxRegistrationNumber);
-    ticketRequestModel.phone.should.be.equal(phone);
     ticketRequestModel.trade.should.be.equal(trade);
+    ticketRequestModel.phone.should.be.equal(phone);
     ticketRequestModel.agreements.should.be.equal(agreements);
     ticketRequestModel.email.should.be.equal(email);
     done();
@@ -49,8 +49,8 @@ describe('ticketRequest model test', function () {
       .withAmount(amount)
       .withDate(date)
       .withTaxRegistrationNumber(taxRegistrationNumber)
-      .withPhone(phone)
       .withTrade(trade)
+      .withPhone(phone)
       .withAgreements(agreements)
       .withEmail(email)
       .build();
@@ -61,8 +61,8 @@ describe('ticketRequest model test', function () {
     ticketRequestModel.amount.should.be.equal(amount);
     ticketRequestModel.date.should.be.equal(date);
     ticketRequestModel.taxRegistrationNumber.should.be.equal(taxRegistrationNumber);
-    ticketRequestModel.phone.should.be.equal(phone);
     ticketRequestModel.trade.should.be.equal(trade);
+    ticketRequestModel.phone.should.be.equal(phone);
     ticketRequestModel.agreements.should.be.equal(agreements);
     ticketRequestModel.email.should.be.equal(email);
     done();
