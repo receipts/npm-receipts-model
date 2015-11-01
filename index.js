@@ -6,6 +6,10 @@ module.exports = {
     ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError,
     UnauthorizedUserError: require('./lib/error/unauthorizedUserError').UnauthorizedUserError
   },
+  enum: {
+    Brand: require('./lib/model/brand').Brand,
+    Currency: require('./lib/model/currency').Currency
+  },
   model: {
     /**
      * the ticketRequest model and builder.

@@ -25,6 +25,20 @@ describe('index test', function () {
     done();
   });
 
+  it('should export Brand enum', function (done) {
+
+    var Brand = index.enum.Brand;
+    should.exist(Brand);
+    done();
+  });
+
+  it('should export Currency enum', function (done) {
+
+    var Currency = index.enum.Currency;
+    should.exist(Currency);
+    done();
+  });
+
   it('should export amountResponse', function (done) {
 
     var amountResponse = index.model.amountResponse;
