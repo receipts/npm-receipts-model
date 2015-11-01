@@ -3,7 +3,8 @@ var meta = require('./lib/meta');
 module.exports = {
 
   error: {
-    ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError
+    ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError,
+    UnauthorizedUserError: require('./lib/error/unauthorizedUserError').UnauthorizedUserError
   },
   model: {
     /**
