@@ -1,16 +1,16 @@
 {
   "name": "receipts-model",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Receipts model.",
   "main": "./index.js",
   "dependencies": {
     "assert-plus": "^0.1.5",
     "async": "^1.5.0",
-    "winston": "^2.0.0",
+    "winston": "^2.1.0",
     "winston-loggly": "^1.2.0"
   },
   "devDependencies": {
-    "chai": "^3.4.0",
+    "chai": "^3.4.1",
     "istanbul": "^0.4.0",
     "mocha": "^2.3.3"
   },
@@ -42,6 +42,6 @@
     "node": ">=0.10.0"
   },
   "readmeFilename": "README.md",
-  "_id": "receipts-model@0.5.3",
-  "_from": "receipts-model@^0.5.3"
+  "_id": "receipts-model@0.5.4",
+  "_from": "receipts-model@^0.5.4"
 }

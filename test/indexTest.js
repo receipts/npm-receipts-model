@@ -53,6 +53,13 @@ describe('index test', function () {
     done();
   });
 
+  it('should export lotteryTradesCollectionResponse', function (done) {
+
+    var lotteryTradesCollectionResponse = index.model.lotteryTradesCollectionResponse;
+    should.exist(lotteryTradesCollectionResponse);
+    done();
+  });
+
   it('should export ticketRequest', function (done) {
 
     var ticketRequest = index.model.ticketRequest;
@@ -64,6 +71,13 @@ describe('index test', function () {
 
     var ticketResponse = index.model.ticketResponse;
     should.exist(ticketResponse);
+    done();
+  });
+
+  it('should export tradeResponse', function (done) {
+
+    var tradeResponse = index.model.tradeResponse;
+    should.exist(tradeResponse);
     done();
   });
 

@@ -40,12 +40,26 @@ module.exports = {
      */
     lotteryTicketsCollectionResponse: require('./lib/model/response/lotteryTicketsCollectionResponse'),
     /**
+     * the lotteryTradesCollectionResponse model and builder.
+     * @property lotteryTradesCollectionResponse
+     * @type lotteryTradesCollectionResponse
+     * @static
+     */
+    lotteryTradesCollectionResponse: require('./lib/model/response/lotteryTradesCollectionResponse'),
+    /**
      * the ticketResponse model and builder.
      * @property ticketResponse
      * @type ticketResponse
      * @static
      */
-    ticketResponse: require('./lib/model/response/ticketResponse')
+    ticketResponse: require('./lib/model/response/ticketResponse'),
+    /**
+     * the tradeResponse model and builder.
+     * @property tradeResponse
+     * @type tradeResponse
+     * @static
+     */
+    tradeResponse: require('./lib/model/response/tradeResponse')
   },
 
   /**
