@@ -4,7 +4,13 @@ module.exports = {
 
   error: {
     ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError,
-    UnauthorizedUserError: require('./lib/error/unauthorizedUserError').UnauthorizedUserError
+    UnauthorizedUserError: require('./lib/error/unauthorizedUserError').UnauthorizedUserError,
+    AlreadyExistsError: require('./lib/error/alreadyExistsError').AlreadyExistsError,
+    UnknownValidateError: require('./lib/error/unknownValidateError').UnknownValidateError,
+    InvalidPointOfSaleError: require('./lib/error/invalidPointOfSaleError').InvalidPointOfSaleError,
+    InvalidDateError: require('./lib/error/invalidDateError').InvalidDateError,
+    InvalidAmountError: require('./lib/error/invalidAmountError').InvalidAmountError,
+    InvalidTaxRegistrationNumberError: require('./lib/error/invalidTaxRegistrationNumberError').InvalidTaxRegistrationNumberError
   },
   enum: {
     Brand: require('./lib/model/brand').Brand,
