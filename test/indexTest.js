@@ -18,6 +18,48 @@ describe('index test', function () {
     done();
   });
 
+  it('should export AlreadyExistsError', function (done) {
+
+    var AlreadyExistsError = index.error.AlreadyExistsError;
+    should.exist(AlreadyExistsError);
+    done();
+  });
+
+  it('should export UnknownValidateError', function (done) {
+
+    var UnknownValidateError = index.error.UnknownValidateError;
+    should.exist(UnknownValidateError);
+    done();
+  });
+
+  it('should export InvalidPointOfSaleError', function (done) {
+
+    var InvalidPointOfSaleError = index.error.InvalidPointOfSaleError;
+    should.exist(InvalidPointOfSaleError);
+    done();
+  });
+
+  it('should export InvalidDateError', function (done) {
+
+    var InvalidDateError = index.error.InvalidDateError;
+    should.exist(InvalidDateError);
+    done();
+  });
+
+  it('should export InvalidAmountError', function (done) {
+
+    var InvalidAmountError = index.error.InvalidAmountError;
+    should.exist(InvalidAmountError);
+    done();
+  });
+
+  it('should export InvalidTaxRegistrationNumberError', function (done) {
+
+    var InvalidTaxRegistrationNumberError = index.error.InvalidTaxRegistrationNumberError;
+    should.exist(InvalidTaxRegistrationNumberError);
+    done();
+  });
+
   it('should export agreementsRequest', function (done) {
 
     var agreementsRequest = index.model.agreementsRequest;
