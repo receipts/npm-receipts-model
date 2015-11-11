@@ -26,8 +26,6 @@ npm test
 
 ## Dependencies
 
-- [assert-plus](https://github.com/mcavage/node-assert-plus): Extra assertions on top of node&#39;s assert module
-- [async](): Higher-order functions and common patterns for asynchronous code
 - [winston](): A multi-transport async logging library for Node.js
 - [winston-loggly](https://github.com/indexzero/winston-loggly): A Loggly transport for winston
 

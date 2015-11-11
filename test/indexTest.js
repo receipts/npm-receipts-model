@@ -67,6 +67,27 @@ describe('index test', function () {
     done();
   });
 
+  it('should export InvalidEmailError', function (done) {
+
+    var InvalidEmailError = index.error.InvalidEmailError;
+    should.exist(InvalidEmailError);
+    done();
+  });
+
+  it('should export InvalidPhoneError', function (done) {
+
+    var InvalidPhoneError = index.error.InvalidPhoneError;
+    should.exist(InvalidPhoneError);
+    done();
+  });
+
+  it('should export InvalidTradeError', function (done) {
+
+    var InvalidTradeError = index.error.InvalidTradeError;
+    should.exist(InvalidTradeError);
+    done();
+  });
+
   it('should export agreementsRequest', function (done) {
 
     var agreementsRequest = index.model.agreementsRequest;

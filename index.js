@@ -11,7 +11,10 @@ module.exports = {
     InvalidPurchaseOrderNumberError: require('./lib/error/invalidPurchaseOrderNumberError').InvalidPurchaseOrderNumberError,
     InvalidDateError: require('./lib/error/invalidDateError').InvalidDateError,
     InvalidAmountError: require('./lib/error/invalidAmountError').InvalidAmountError,
-    InvalidTaxRegistrationNumberError: require('./lib/error/invalidTaxRegistrationNumberError').InvalidTaxRegistrationNumberError
+    InvalidTaxRegistrationNumberError: require('./lib/error/invalidTaxRegistrationNumberError').InvalidTaxRegistrationNumberError,
+    InvalidEmailError: require('./lib/error/invalidEmailError').InvalidEmailError,
+    InvalidPhoneError: require('./lib/error/invalidPhoneError').InvalidPhoneError,
+    InvalidTradeError: require('./lib/error/invalidTradeError').InvalidTradeError
   },
   enum: {
     Brand: require('./lib/model/brand').Brand,
