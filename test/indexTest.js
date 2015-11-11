@@ -39,6 +39,13 @@ describe('index test', function () {
     done();
   });
 
+  it('should export InvalidPurchaseOrderNumberError', function (done) {
+
+    var InvalidPurchaseOrderNumberError = index.error.InvalidPurchaseOrderNumberError;
+    should.exist(InvalidPurchaseOrderNumberError);
+    done();
+  });
+
   it('should export InvalidDateError', function (done) {
 
     var InvalidDateError = index.error.InvalidDateError;

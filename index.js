@@ -8,6 +8,7 @@ module.exports = {
     AlreadyExistsError: require('./lib/error/alreadyExistsError').AlreadyExistsError,
     UnknownValidateError: require('./lib/error/unknownValidateError').UnknownValidateError,
     InvalidPointOfSaleError: require('./lib/error/invalidPointOfSaleError').InvalidPointOfSaleError,
+    InvalidPurchaseOrderNumberError: require('./lib/error/invalidPurchaseOrderNumberError').InvalidPurchaseOrderNumberError,
     InvalidDateError: require('./lib/error/invalidDateError').InvalidDateError,
     InvalidAmountError: require('./lib/error/invalidAmountError').InvalidAmountError,
     InvalidTaxRegistrationNumberError: require('./lib/error/invalidTaxRegistrationNumberError').InvalidTaxRegistrationNumberError
