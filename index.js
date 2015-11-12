@@ -18,7 +18,8 @@ module.exports = {
   },
   enum: {
     Brand: require('./lib/model/brand').Brand,
-    Currency: require('./lib/model/currency').Currency
+    Currency: require('./lib/model/currency').Currency,
+    ResultStatus: require('./lib/model/resultStatus').ResultStatus
   },
   model: {
     /**

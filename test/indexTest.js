@@ -109,6 +109,13 @@ describe('index test', function () {
     done();
   });
 
+  it('should export ResultStatus enum', function (done) {
+
+    var ResultStatus = index.enum.ResultStatus;
+    should.exist(ResultStatus);
+    done();
+  });
+
   it('should export amountResponse', function (done) {
 
     var amountResponse = index.model.amountResponse;
