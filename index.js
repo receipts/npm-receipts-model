@@ -18,7 +18,8 @@ module.exports = {
   },
   enum: {
     Brand: require('./lib/model/brand').Brand,
-    Currency: require('./lib/model/currency').Currency
+    Currency: require('./lib/model/currency').Currency,
+    ResultStatus: require('./lib/model/resultStatus').ResultStatus
   },
   model: {
     /**
@@ -43,6 +44,13 @@ module.exports = {
      */
     amountResponse: require('./lib/model/response/amountResponse'),
     /**
+     * the lotteryResultsCollectionResponse model and builder.
+     * @property lotteryResultsCollectionResponse
+     * @type lotteryResultsCollectionResponse
+     * @static
+     */
+    lotteryResultsCollectionResponse: require('./lib/model/response/lotteryResultsCollectionResponse'),
+    /**
      * the lotteryTicketsCollectionResponse model and builder.
      * @property lotteryTicketsCollectionResponse
      * @type lotteryTicketsCollectionResponse
@@ -56,6 +64,27 @@ module.exports = {
      * @static
      */
     lotteryTradesCollectionResponse: require('./lib/model/response/lotteryTradesCollectionResponse'),
+    /**
+     * the resultPrizeResponse model and builder.
+     * @property resultPrizeResponse
+     * @type resultPrizeResponse
+     * @static
+     */
+    resultPrizeResponse: require('./lib/model/response/resultPrizeResponse'),
+    /**
+     * the resultPrizeWinnerResponse model and builder.
+     * @property resultPrizeWinnerResponse
+     * @type resultPrizeWinnerResponse
+     * @static
+     */
+    resultPrizeWinnerResponse: require('./lib/model/response/resultPrizeWinnerResponse'),
+    /**
+     * the resultResponse model and builder.
+     * @property resultResponse
+     * @type resultResponse
+     * @static
+     */
+    resultResponse: require('./lib/model/response/resultResponse'),
     /**
      * the ticketResponse model and builder.
      * @property ticketResponse

@@ -109,10 +109,24 @@ describe('index test', function () {
     done();
   });
 
+  it('should export ResultStatus enum', function (done) {
+
+    var ResultStatus = index.enum.ResultStatus;
+    should.exist(ResultStatus);
+    done();
+  });
+
   it('should export amountResponse', function (done) {
 
     var amountResponse = index.model.amountResponse;
     should.exist(amountResponse);
+    done();
+  });
+
+  it('should export lotteryResultsCollectionResponse', function (done) {
+
+    var lotteryResultsCollectionResponse = index.model.lotteryResultsCollectionResponse;
+    should.exist(lotteryResultsCollectionResponse);
     done();
   });
 
@@ -127,6 +141,27 @@ describe('index test', function () {
 
     var lotteryTradesCollectionResponse = index.model.lotteryTradesCollectionResponse;
     should.exist(lotteryTradesCollectionResponse);
+    done();
+  });
+
+  it('should export resultPrizeResponse', function (done) {
+
+    var resultPrizeResponse = index.model.resultPrizeResponse;
+    should.exist(resultPrizeResponse);
+    done();
+  });
+
+  it('should export resultPrizeWinnerResponse', function (done) {
+
+    var resultPrizeWinnerResponse = index.model.resultPrizeWinnerResponse;
+    should.exist(resultPrizeWinnerResponse);
+    done();
+  });
+
+  it('should export resultResponse', function (done) {
+
+    var resultResponse = index.model.resultResponse;
+    should.exist(resultResponse);
     done();
   });
 
