@@ -1,6 +1,6 @@
 {
   "name": "receipts-model",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "description": "Receipts model.",
   "main": "./index.js",
   "dependencies": {
@@ -40,6 +40,6 @@
     "node": ">=0.10.0"
   },
   "readmeFilename": "README.md",
-  "_id": "receipts-model@0.5.8",
-  "_from": "receipts-model@^0.5.8"
+  "_id": "receipts-model@0.5.9",
+  "_from": "receipts-model@^0.5.9"
 }
