@@ -26,12 +26,12 @@ npm test
 
 ## Dependencies
 
-- [winston](): A multi-transport async logging library for Node.js
+- [winston](https://github.com/winstonjs/winston): A multi-transport async logging library for Node.js
 - [winston-loggly](https://github.com/indexzero/winston-loggly): A Loggly transport for winston
 
 ## Dev Dependencies
 
-- [chai](): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
+- [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [istanbul](https://github.com/gotwarlost/istanbul): Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests. Supports all JS coverage use cases including unit tests, server side functional tests
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
 
@@ -44,7 +44,7 @@ npm test
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015 Zenedith
+Copyright (c) 2015-2016 Zenedith
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

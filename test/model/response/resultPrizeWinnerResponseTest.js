@@ -5,15 +5,21 @@ var resultPrizeWinnerResponse = require('../../../lib/model/response/resultPrize
 describe('resultPrizeWinnerResponse model test', function () {
 
   var code = 'code';
+  var name = 'name';
+  var type = 'type';
 
   it('should create model', function (done) {
 
     var resultPrizeWinnerResponseModel = new resultPrizeWinnerResponse.ResultPrizeWinnerResponse(
-      code
+      code,
+      name,
+      type
     );
 
     should.exist(resultPrizeWinnerResponseModel);
     resultPrizeWinnerResponseModel.code.should.be.equal(code);
+    resultPrizeWinnerResponseModel.name.should.be.equal(name);
+    resultPrizeWinnerResponseModel.type.should.be.equal(type);
     done();
   });
 
@@ -21,10 +27,14 @@ describe('resultPrizeWinnerResponse model test', function () {
 
     var resultPrizeWinnerResponseModel = new resultPrizeWinnerResponse.ResultPrizeWinnerResponseBuilder()
       .withCode(code)
+      .withName(name)
+      .withType(type)
       .build();
 
     should.exist(resultPrizeWinnerResponseModel);
     resultPrizeWinnerResponseModel.code.should.be.equal(code);
+    resultPrizeWinnerResponseModel.name.should.be.equal(name);
+    resultPrizeWinnerResponseModel.type.should.be.equal(type);
     done();
   });
 
