@@ -98,7 +98,14 @@ module.exports = {
      * @type tradeResponse
      * @static
      */
-    tradeResponse: require('./lib/model/response/tradeResponse')
+    tradeResponse: require('./lib/model/response/tradeResponse'),
+    /**
+     * the ticketDetailsResponse model and builder.
+     * @property ticketDetailsResponse
+     * @type ticketDetailsResponse
+     * @static
+     */
+    ticketDetailsResponse: require('./lib/model/response/ticketDetailsResponse')
   },
 
   /**

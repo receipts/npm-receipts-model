@@ -186,6 +186,13 @@ describe('index test', function () {
     done();
   });
 
+  it('should export ticketDetailsResponse', function (done) {
+
+    var ticketDetailsResponse = index.model.ticketDetailsResponse;
+    should.exist(ticketDetailsResponse);
+    done();
+  });
+
   it('should export meta version', function (done) {
 
     var version = index.VERSION;
