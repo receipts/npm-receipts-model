@@ -16,8 +16,11 @@ module.exports = {
     InvalidPhoneError: require('./lib/error/invalidPhoneError').InvalidPhoneError,
     InvalidTradeError: require('./lib/error/invalidTradeError').InvalidTradeError
   },
+  converter: {
+    tradeConverter: require('./lib/tradeConverter').tradeConverter
+  },
   enum: {
-    Brand: require('./lib/model/brand').Brand,
+    Trade: require('./lib/model/trade').Trade,
     Currency: require('./lib/model/currency').Currency,
     ResultStatus: require('./lib/model/resultStatus').ResultStatus
   },

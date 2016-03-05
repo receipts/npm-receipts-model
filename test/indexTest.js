@@ -95,10 +95,10 @@ describe('index test', function () {
     done();
   });
 
-  it('should export Brand enum', function (done) {
+  it('should export Trade enum', function (done) {
 
-    var Brand = index.enum.Brand;
-    should.exist(Brand);
+    var Trade = index.enum.Trade;
+    should.exist(Trade);
     done();
   });
 
