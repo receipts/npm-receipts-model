@@ -17,7 +17,7 @@ module.exports = {
     InvalidTradeError: require('./lib/error/invalidTradeError').InvalidTradeError
   },
   enum: {
-    Brand: require('./lib/model/brand').Brand,
+    Trade: require('./lib/model/trade').Trade,
     Currency: require('./lib/model/currency').Currency,
     ResultStatus: require('./lib/model/resultStatus').ResultStatus
   },
