@@ -4,6 +4,13 @@ var index = require('../index');
 
 describe('index test', function () {
 
+  it('should export TicketNotFoundError', function (done) {
+
+    var TicketNotFoundError = index.error.TicketNotFoundError;
+    should.exist(TicketNotFoundError);
+    done();
+  });
+
   it('should export ServiceUnavailableError', function (done) {
 
     var ServiceUnavailableError = index.error.ServiceUnavailableError;

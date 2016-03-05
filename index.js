@@ -3,6 +3,7 @@ var meta = require('./lib/meta');
 module.exports = {
 
   error: {
+    TicketNotFoundError: require('./lib/error/ticketNotFoundError').TicketNotFoundError,
     ServiceUnavailableError: require('./lib/error/serviceUnavailableError').ServiceUnavailableError,
     UnauthorizedUserError: require('./lib/error/unauthorizedUserError').UnauthorizedUserError,
     AlreadyExistsError: require('./lib/error/alreadyExistsError').AlreadyExistsError,
