@@ -9,6 +9,7 @@ describe('ticketResponse model test', function () {
   var purchaseOrderNumber = 'purchaseOrderNumber';
   var amount = 'amount';
   var date = 'date';
+  var special = 'special';
 
   it('should create model', function (done) {
 
@@ -17,7 +18,8 @@ describe('ticketResponse model test', function () {
       code, 
       purchaseOrderNumber, 
       amount, 
-      date
+      date,
+      special
     );
 
     should.exist(ticketResponseModel);
@@ -26,6 +28,7 @@ describe('ticketResponse model test', function () {
     ticketResponseModel.purchaseOrderNumber.should.be.equal(purchaseOrderNumber);
     ticketResponseModel.amount.should.be.equal(amount);
     ticketResponseModel.date.should.be.equal(date);
+    ticketResponseModel.special.should.be.equal(special);
     done();
   });
 
@@ -37,6 +40,7 @@ describe('ticketResponse model test', function () {
       .withPurchaseOrderNumber(purchaseOrderNumber)
       .withAmount(amount)
       .withDate(date)
+      .withSpecial(special)
       .build();
 
     should.exist(ticketResponseModel);
@@ -45,6 +49,7 @@ describe('ticketResponse model test', function () {
     ticketResponseModel.purchaseOrderNumber.should.be.equal(purchaseOrderNumber);
     ticketResponseModel.amount.should.be.equal(amount);
     ticketResponseModel.date.should.be.equal(date);
+    ticketResponseModel.special.should.be.equal(special);
     done();
   });
 

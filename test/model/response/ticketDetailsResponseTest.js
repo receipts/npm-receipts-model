@@ -9,6 +9,7 @@ describe('ticketDetailsResponse model test', function () {
   var purchaseOrderNumber = 'purchaseOrderNumber';
   var amount = 'amount';
   var date = 'date';
+  var special = 'special';
   var pointOfSale = 'pointOfSale';
   var taxRegistrationNumber = 'taxRegistrationNumber';
   var trade = 'trade';
@@ -21,6 +22,7 @@ describe('ticketDetailsResponse model test', function () {
       purchaseOrderNumber,
       amount,
       date,
+      special,
       pointOfSale,
       taxRegistrationNumber,
       trade
@@ -32,6 +34,7 @@ describe('ticketDetailsResponse model test', function () {
     ticketDetailsResponseModel.purchaseOrderNumber.should.be.equal(purchaseOrderNumber);
     ticketDetailsResponseModel.amount.should.be.equal(amount);
     ticketDetailsResponseModel.date.should.be.equal(date);
+    ticketDetailsResponseModel.special.should.be.equal(special);
     ticketDetailsResponseModel.pointOfSale.should.be.equal(pointOfSale);
     ticketDetailsResponseModel.taxRegistrationNumber.should.be.equal(taxRegistrationNumber);
     ticketDetailsResponseModel.trade.should.be.equal(trade);
@@ -47,6 +50,7 @@ describe('ticketDetailsResponse model test', function () {
       .withPurchaseOrderNumber(purchaseOrderNumber)
       .withAmount(amount)
       .withDate(date)
+      .withSpecial(special)
       .withPointOfSale(pointOfSale)
       .withTaxRegistrationNumber(taxRegistrationNumber)
       .withTrade(trade)
@@ -58,6 +62,7 @@ describe('ticketDetailsResponse model test', function () {
     ticketDetailsResponseModel.purchaseOrderNumber.should.be.equal(purchaseOrderNumber);
     ticketDetailsResponseModel.amount.should.be.equal(amount);
     ticketDetailsResponseModel.date.should.be.equal(date);
+    ticketDetailsResponseModel.special.should.be.equal(special);
     ticketDetailsResponseModel.pointOfSale.should.be.equal(pointOfSale);
     ticketDetailsResponseModel.taxRegistrationNumber.should.be.equal(taxRegistrationNumber);
     ticketDetailsResponseModel.trade.should.be.equal(trade);
