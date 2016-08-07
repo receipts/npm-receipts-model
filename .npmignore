@@ -10,4 +10,3 @@ test/
 *.ipr
 *.iws
 .idea
-config/runtime.json
