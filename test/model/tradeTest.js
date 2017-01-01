@@ -72,6 +72,13 @@ describe('trade enum test', function () {
     done();
   });
 
+  it('should get trade from FUEL id', function (done) {
+    var trade = Trade.getTradeFromId('57f4e011065862e393475820');
+
+    expect(trade).to.be.equal(Trade.FUEL);
+    done();
+  });
+
   it('should get id from HAIRDRESSING trade', function (done) {
     var id = Trade.getIdFromTrade('HAIRDRESSING');
 
@@ -104,6 +111,13 @@ describe('trade enum test', function () {
     var id = Trade.getIdFromTrade('TAXI');
 
     expect(id).to.be.equal('57eebed76adf7c2f1c14586a');
+    done();
+  });
+
+  it('should get id from FUEL trade', function (done) {
+    var id = Trade.getIdFromTrade('FUEL');
+
+    expect(id).to.be.equal('57f4e011065862e393475820');
     done();
   });
 
