@@ -1,32 +1,32 @@
-var chai = require('chai');
-var should = chai.should();
-var updateTicketRequest = require('../../../lib/model/request/updateTicketRequest');
+const chai = require('chai');
+const should = chai.should();
+const updateTicketRequest = require('../../../lib/model/request/updateTicketRequest');
 
-describe('updateTicketRequest model test', function () {
+describe('updateTicketRequest model test', () => {
 
-  var pointOfSale = 'pointOfSale';
-  var purchaseOrderNumber = 'purchaseOrderNumber';
-  var amount = 'amount';
-  var date = 'date';
-  var taxRegistrationNumber = 'taxRegistrationNumber';
-  var trade = 'trade';
+  const purchaseOrderNumber = 'purchaseOrderNumber';
+  const amount = 'amount';
+  const date = 'date';
+  const pointOfSale = 'pointOfSale';
+  const taxRegistrationNumber = 'taxRegistrationNumber';
+  const trade = 'trade';
 
-  it('should create model', function (done) {
+  it('should create model', done => {
 
-    var updateTicketRequestModel = new updateTicketRequest.UpdateTicketRequest(
-      pointOfSale, 
-      purchaseOrderNumber, 
-      amount, 
-      date, 
-      taxRegistrationNumber, 
+    const updateTicketRequestModel = new updateTicketRequest.UpdateTicketRequest(
+      purchaseOrderNumber,
+      amount,
+      date,
+      pointOfSale,
+      taxRegistrationNumber,
       trade
     );
 
     should.exist(updateTicketRequestModel);
-    updateTicketRequestModel.pointOfSale.should.be.equal(pointOfSale);
     updateTicketRequestModel.purchaseOrderNumber.should.be.equal(purchaseOrderNumber);
     updateTicketRequestModel.amount.should.be.equal(amount);
     updateTicketRequestModel.date.should.be.equal(date);
+    updateTicketRequestModel.pointOfSale.should.be.equal(pointOfSale);
     updateTicketRequestModel.taxRegistrationNumber.should.be.equal(taxRegistrationNumber);
     updateTicketRequestModel.trade.should.be.equal(trade);
     done();
@@ -34,20 +34,20 @@ describe('updateTicketRequest model test', function () {
 
   it('should create model by builder', function (done) {
 
-    var updateTicketRequestModel = new updateTicketRequest.UpdateTicketRequestBuilder()
-      .withPointOfSale(pointOfSale)
+    const updateTicketRequestModel = new updateTicketRequest.UpdateTicketRequestBuilder()
       .withPurchaseOrderNumber(purchaseOrderNumber)
       .withAmount(amount)
       .withDate(date)
+      .withPointOfSale(pointOfSale)
       .withTaxRegistrationNumber(taxRegistrationNumber)
       .withTrade(trade)
       .build();
 
     should.exist(updateTicketRequestModel);
-    updateTicketRequestModel.pointOfSale.should.be.equal(pointOfSale);
     updateTicketRequestModel.purchaseOrderNumber.should.be.equal(purchaseOrderNumber);
     updateTicketRequestModel.amount.should.be.equal(amount);
     updateTicketRequestModel.date.should.be.equal(date);
+    updateTicketRequestModel.pointOfSale.should.be.equal(pointOfSale);
     updateTicketRequestModel.taxRegistrationNumber.should.be.equal(taxRegistrationNumber);
     updateTicketRequestModel.trade.should.be.equal(trade);
     done();

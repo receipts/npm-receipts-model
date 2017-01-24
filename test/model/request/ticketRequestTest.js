@@ -1,30 +1,30 @@
-var chai = require('chai');
-var should = chai.should();
-var ticketRequest = require('../../../lib/model/request/ticketRequest');
+const chai = require('chai');
+const should = chai.should();
+const ticketRequest = require('../../../lib/model/request/ticketRequest');
 
-describe('ticketRequest model test', function () {
+describe('ticketRequest model test', () => {
 
-  var pointOfSale = 'pointOfSale';
-  var purchaseOrderNumber = 'purchaseOrderNumber';
-  var amount = 'amount';
-  var date = 'date';
-  var taxRegistrationNumber = 'taxRegistrationNumber';
-  var trade = 'trade';
-  var phone = 'phone';
-  var agreements = 'agreements';
-  var email = 'email';
+  const pointOfSale = 'pointOfSale';
+  const purchaseOrderNumber = 'purchaseOrderNumber';
+  const amount = 'amount';
+  const date = 'date';
+  const taxRegistrationNumber = 'taxRegistrationNumber';
+  const trade = 'trade';
+  const phone = 'phone';
+  const agreements = 'agreements';
+  const email = 'email';
 
-  it('should create model', function (done) {
+  it('should create model', done => {
 
-    var ticketRequestModel = new ticketRequest.TicketRequest(
-      pointOfSale, 
-      purchaseOrderNumber, 
-      amount, 
-      date, 
-      taxRegistrationNumber, 
-      trade, 
-      phone, 
-      agreements, 
+    const ticketRequestModel = new ticketRequest.TicketRequest(
+      pointOfSale,
+      purchaseOrderNumber,
+      amount,
+      date,
+      taxRegistrationNumber,
+      trade,
+      phone,
+      agreements,
       email
     );
 
@@ -43,7 +43,7 @@ describe('ticketRequest model test', function () {
 
   it('should create model by builder', function (done) {
 
-    var ticketRequestModel = new ticketRequest.TicketRequestBuilder()
+    const ticketRequestModel = new ticketRequest.TicketRequestBuilder()
       .withPointOfSale(pointOfSale)
       .withPurchaseOrderNumber(purchaseOrderNumber)
       .withAmount(amount)

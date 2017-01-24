@@ -1,16 +1,16 @@
-var chai = require('chai');
-var should = chai.should();
-var lotteryTradesCollectionResponse = require('../../../lib/model/response/lotteryTradesCollectionResponse');
+const chai = require('chai');
+const should = chai.should();
+const lotteryTradesCollectionResponse = require('../../../lib/model/response/lotteryTradesCollectionResponse');
 
-describe('lotteryTradesCollectionResponse model test', function () {
+describe('lotteryTradesCollectionResponse model test', () => {
 
-  var total = 'total';
-  var trades = 'trades';
+  const total = 'total';
+  const trades = 'trades';
 
-  it('should create model', function (done) {
+  it('should create model', done => {
 
-    var lotteryTradesCollectionResponseModel = new lotteryTradesCollectionResponse.LotteryTradesCollectionResponse(
-      total, 
+    const lotteryTradesCollectionResponseModel = new lotteryTradesCollectionResponse.LotteryTradesCollectionResponse(
+      total,
       trades
     );
 
@@ -22,7 +22,7 @@ describe('lotteryTradesCollectionResponse model test', function () {
 
   it('should create model by builder', function (done) {
 
-    var lotteryTradesCollectionResponseModel = new lotteryTradesCollectionResponse.LotteryTradesCollectionResponseBuilder()
+    const lotteryTradesCollectionResponseModel = new lotteryTradesCollectionResponse.LotteryTradesCollectionResponseBuilder()
       .withTotal(total)
       .withTrades(trades)
       .build();

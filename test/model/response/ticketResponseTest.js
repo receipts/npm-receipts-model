@@ -1,23 +1,23 @@
-var chai = require('chai');
-var should = chai.should();
-var ticketResponse = require('../../../lib/model/response/ticketResponse');
+const chai = require('chai');
+const should = chai.should();
+const ticketResponse = require('../../../lib/model/response/ticketResponse');
 
-describe('ticketResponse model test', function () {
+describe('ticketResponse model test', () => {
 
-  var id = 'id';
-  var code = 'code';
-  var purchaseOrderNumber = 'purchaseOrderNumber';
-  var amount = 'amount';
-  var date = 'date';
-  var special = 'special';
+  const id = 'id';
+  const code = 'code';
+  const purchaseOrderNumber = 'purchaseOrderNumber';
+  const amount = 'amount';
+  const date = 'date';
+  const special = 'special';
 
-  it('should create model', function (done) {
+  it('should create model', done => {
 
-    var ticketResponseModel = new ticketResponse.TicketResponse(
-      id, 
-      code, 
-      purchaseOrderNumber, 
-      amount, 
+    const ticketResponseModel = new ticketResponse.TicketResponse(
+      id,
+      code,
+      purchaseOrderNumber,
+      amount,
       date,
       special
     );
@@ -34,7 +34,7 @@ describe('ticketResponse model test', function () {
 
   it('should create model by builder', function (done) {
 
-    var ticketResponseModel = new ticketResponse.TicketResponseBuilder()
+    const ticketResponseModel = new ticketResponse.TicketResponseBuilder()
       .withId(id)
       .withCode(code)
       .withPurchaseOrderNumber(purchaseOrderNumber)

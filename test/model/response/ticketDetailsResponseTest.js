@@ -1,22 +1,22 @@
-var chai = require('chai');
-var should = chai.should();
-var ticketDetailsResponse = require('../../../lib/model/response/ticketDetailsResponse');
+const chai = require('chai');
+const should = chai.should();
+const ticketDetailsResponse = require('../../../lib/model/response/ticketDetailsResponse');
 
-describe('ticketDetailsResponse model test', function () {
+describe('ticketDetailsResponse model test', () => {
 
-  var id = 'id';
-  var code = 'code';
-  var purchaseOrderNumber = 'purchaseOrderNumber';
-  var amount = 'amount';
-  var date = 'date';
-  var special = 'special';
-  var pointOfSale = 'pointOfSale';
-  var taxRegistrationNumber = 'taxRegistrationNumber';
-  var trade = 'trade';
+  const id = 'id';
+  const code = 'code';
+  const purchaseOrderNumber = 'purchaseOrderNumber';
+  const amount = 'amount';
+  const date = 'date';
+  const special = 'special';
+  const pointOfSale = 'pointOfSale';
+  const taxRegistrationNumber = 'taxRegistrationNumber';
+  const trade = 'trade';
 
-  it('should create model', function (done) {
+  it('should create model', done => {
 
-    var ticketDetailsResponseModel = new ticketDetailsResponse.TicketDetailsResponse(
+    const ticketDetailsResponseModel = new ticketDetailsResponse.TicketDetailsResponse(
       id,
       code,
       purchaseOrderNumber,
@@ -38,13 +38,12 @@ describe('ticketDetailsResponse model test', function () {
     ticketDetailsResponseModel.pointOfSale.should.be.equal(pointOfSale);
     ticketDetailsResponseModel.taxRegistrationNumber.should.be.equal(taxRegistrationNumber);
     ticketDetailsResponseModel.trade.should.be.equal(trade);
-
     done();
   });
 
   it('should create model by builder', function (done) {
 
-    var ticketDetailsResponseModel = new ticketDetailsResponse.TicketDetailsResponseBuilder()
+    const ticketDetailsResponseModel = new ticketDetailsResponse.TicketDetailsResponseBuilder()
       .withId(id)
       .withCode(code)
       .withPurchaseOrderNumber(purchaseOrderNumber)
