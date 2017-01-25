@@ -3,14 +3,16 @@
   "version": "1.8.0",
   "description": "Receipts model.",
   "main": "./index.js",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "istanbul": "0.4.5",
-    "mocha": "3.2.0"
+    "mocha": "3.2.0",
+    "nsp": "^2.6.2"
   },
   "scripts": {
-    "prepublish": "npm prune && nsp check",
+    "prepublish": "npm prune && node_modules/nsp/bin/nsp check",
     "test": "mocha --recursive test",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --recursive test",
     "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --recursive test"
