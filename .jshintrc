@@ -1,5 +1,7 @@
 {
-  "esnext":     true,
+  "esversion":  6,
+  "es3":        false,
+  "es5":        false,
   "bitwise":    false,
   "asi":        false,
   "browser":    false,
