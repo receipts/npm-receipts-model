@@ -1,16 +1,16 @@
-var chai = require('chai');
-var should = chai.should();
-var resultPrizeWinnerResponse = require('../../../lib/model/response/resultPrizeWinnerResponse');
+const chai = require('chai');
+const should = chai.should();
+const resultPrizeWinnerResponse = require('../../../lib/model/response/resultPrizeWinnerResponse');
 
-describe('resultPrizeWinnerResponse model test', function () {
+describe('resultPrizeWinnerResponse model test', () => {
 
-  var code = 'code';
-  var name = 'name';
-  var type = 'type';
+  const code = 'code';
+  const name = 'name';
+  const type = 'type';
 
-  it('should create model', function (done) {
+  it('should create model', done => {
 
-    var resultPrizeWinnerResponseModel = new resultPrizeWinnerResponse.ResultPrizeWinnerResponse(
+    const resultPrizeWinnerResponseModel = new resultPrizeWinnerResponse.ResultPrizeWinnerResponse(
       code,
       name,
       type
@@ -25,7 +25,7 @@ describe('resultPrizeWinnerResponse model test', function () {
 
   it('should create model by builder', function (done) {
 
-    var resultPrizeWinnerResponseModel = new resultPrizeWinnerResponse.ResultPrizeWinnerResponseBuilder()
+    const resultPrizeWinnerResponseModel = new resultPrizeWinnerResponse.ResultPrizeWinnerResponseBuilder()
       .withCode(code)
       .withName(name)
       .withType(type)

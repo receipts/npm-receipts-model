@@ -1,20 +1,20 @@
-var chai = require('chai');
-var should = chai.should();
-var resultResponse = require('../../../lib/model/response/resultResponse');
+const chai = require('chai');
+const should = chai.should();
+const resultResponse = require('../../../lib/model/response/resultResponse');
 
-describe('resultResponse model test', function () {
+describe('resultResponse model test', () => {
 
-  var name = 'name';
-  var date = 'date';
-  var status = 'status';
-  var prizes = 'prizes';
+  const name = 'name';
+  const date = 'date';
+  const status = 'status';
+  const prizes = 'prizes';
 
-  it('should create model', function (done) {
+  it('should create model', done => {
 
-    var resultResponseModel = new resultResponse.ResultResponse(
-      name, 
-      date, 
-      status, 
+    const resultResponseModel = new resultResponse.ResultResponse(
+      name,
+      date,
+      status,
       prizes
     );
 
@@ -28,7 +28,7 @@ describe('resultResponse model test', function () {
 
   it('should create model by builder', function (done) {
 
-    var resultResponseModel = new resultResponse.ResultResponseBuilder()
+    const resultResponseModel = new resultResponse.ResultResponseBuilder()
       .withName(name)
       .withDate(date)
       .withStatus(status)

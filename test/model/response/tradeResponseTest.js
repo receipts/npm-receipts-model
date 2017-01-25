@@ -1,16 +1,16 @@
-var chai = require('chai');
-var should = chai.should();
-var tradeResponse = require('../../../lib/model/response/tradeResponse');
+const chai = require('chai');
+const should = chai.should();
+const tradeResponse = require('../../../lib/model/response/tradeResponse');
 
-describe('tradeResponse model test', function () {
+describe('tradeResponse model test', () => {
 
-  var id = 'id';
-  var name = 'name';
+  const id = 'id';
+  const name = 'name';
 
-  it('should create model', function (done) {
+  it('should create model', done => {
 
-    var tradeResponseModel = new tradeResponse.TradeResponse(
-      id, 
+    const tradeResponseModel = new tradeResponse.TradeResponse(
+      id,
       name
     );
 
@@ -22,7 +22,7 @@ describe('tradeResponse model test', function () {
 
   it('should create model by builder', function (done) {
 
-    var tradeResponseModel = new tradeResponse.TradeResponseBuilder()
+    const tradeResponseModel = new tradeResponse.TradeResponseBuilder()
       .withId(id)
       .withName(name)
       .build();

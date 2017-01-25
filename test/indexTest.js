@@ -1,208 +1,208 @@
-var chai = require('chai');
-var should = chai.should();
-var index = require('../index');
+const chai = require('chai');
+const should = chai.should();
+const index = require('../index');
 
-describe('index test', function () {
+describe('index test', () => {
 
-  it('should export TicketNotFoundError', function (done) {
+  it('should export TicketNotFoundError', done => {
 
-    var TicketNotFoundError = index.error.TicketNotFoundError;
+    const TicketNotFoundError = index.error.TicketNotFoundError;
     should.exist(TicketNotFoundError);
     done();
   });
 
-  it('should export ServiceUnavailableError', function (done) {
+  it('should export ServiceUnavailableError', done => {
 
-    var ServiceUnavailableError = index.error.ServiceUnavailableError;
+    const ServiceUnavailableError = index.error.ServiceUnavailableError;
     should.exist(ServiceUnavailableError);
     done();
   });
 
-  it('should export UnauthorizedUserError', function (done) {
+  it('should export UnauthorizedUserError', done => {
 
-    var UnauthorizedUserError = index.error.UnauthorizedUserError;
+    const UnauthorizedUserError = index.error.UnauthorizedUserError;
     should.exist(UnauthorizedUserError);
     done();
   });
 
-  it('should export AlreadyExistsError', function (done) {
+  it('should export AlreadyExistsError', done => {
 
-    var AlreadyExistsError = index.error.AlreadyExistsError;
+    const AlreadyExistsError = index.error.AlreadyExistsError;
     should.exist(AlreadyExistsError);
     done();
   });
 
-  it('should export UnknownValidateError', function (done) {
+  it('should export UnknownValidateError', done => {
 
-    var UnknownValidateError = index.error.UnknownValidateError;
+    const UnknownValidateError = index.error.UnknownValidateError;
     should.exist(UnknownValidateError);
     done();
   });
 
-  it('should export InvalidPointOfSaleError', function (done) {
+  it('should export InvalidPointOfSaleError', done => {
 
-    var InvalidPointOfSaleError = index.error.InvalidPointOfSaleError;
+    const InvalidPointOfSaleError = index.error.InvalidPointOfSaleError;
     should.exist(InvalidPointOfSaleError);
     done();
   });
 
-  it('should export InvalidPurchaseOrderNumberError', function (done) {
+  it('should export InvalidPurchaseOrderNumberError', done => {
 
-    var InvalidPurchaseOrderNumberError = index.error.InvalidPurchaseOrderNumberError;
+    const InvalidPurchaseOrderNumberError = index.error.InvalidPurchaseOrderNumberError;
     should.exist(InvalidPurchaseOrderNumberError);
     done();
   });
 
-  it('should export InvalidDateError', function (done) {
+  it('should export InvalidDateError', done => {
 
-    var InvalidDateError = index.error.InvalidDateError;
+    const InvalidDateError = index.error.InvalidDateError;
     should.exist(InvalidDateError);
     done();
   });
 
-  it('should export InvalidAmountError', function (done) {
+  it('should export InvalidAmountError', done => {
 
-    var InvalidAmountError = index.error.InvalidAmountError;
+    const InvalidAmountError = index.error.InvalidAmountError;
     should.exist(InvalidAmountError);
     done();
   });
 
-  it('should export InvalidTaxRegistrationNumberError', function (done) {
+  it('should export InvalidTaxRegistrationNumberError', done => {
 
-    var InvalidTaxRegistrationNumberError = index.error.InvalidTaxRegistrationNumberError;
+    const InvalidTaxRegistrationNumberError = index.error.InvalidTaxRegistrationNumberError;
     should.exist(InvalidTaxRegistrationNumberError);
     done();
   });
 
-  it('should export InvalidEmailError', function (done) {
+  it('should export InvalidEmailError', done => {
 
-    var InvalidEmailError = index.error.InvalidEmailError;
+    const InvalidEmailError = index.error.InvalidEmailError;
     should.exist(InvalidEmailError);
     done();
   });
 
-  it('should export InvalidPhoneError', function (done) {
+  it('should export InvalidPhoneError', done => {
 
-    var InvalidPhoneError = index.error.InvalidPhoneError;
+    const InvalidPhoneError = index.error.InvalidPhoneError;
     should.exist(InvalidPhoneError);
     done();
   });
 
-  it('should export InvalidTradeError', function (done) {
+  it('should export InvalidTradeError', done => {
 
-    var InvalidTradeError = index.error.InvalidTradeError;
+    const InvalidTradeError = index.error.InvalidTradeError;
     should.exist(InvalidTradeError);
     done();
   });
 
-  it('should export agreementsRequest', function (done) {
+  it('should export agreementsRequest', done => {
 
-    var agreementsRequest = index.model.agreementsRequest;
+    const agreementsRequest = index.model.agreementsRequest;
     should.exist(agreementsRequest);
     done();
   });
 
-  it('should export Trade enum', function (done) {
+  it('should export Trade enum', done => {
 
-    var Trade = index.enum.Trade;
+    const Trade = index.enum.Trade;
     should.exist(Trade);
     done();
   });
 
-  it('should export Currency enum', function (done) {
+  it('should export Currency enum', done => {
 
-    var Currency = index.enum.Currency;
+    const Currency = index.enum.Currency;
     should.exist(Currency);
     done();
   });
 
-  it('should export ResultStatus enum', function (done) {
+  it('should export ResultStatus enum', done => {
 
-    var ResultStatus = index.enum.ResultStatus;
+    const ResultStatus = index.enum.ResultStatus;
     should.exist(ResultStatus);
     done();
   });
 
-  it('should export amountResponse', function (done) {
+  it('should export amountResponse', done => {
 
-    var amountResponse = index.model.amountResponse;
+    const amountResponse = index.model.amountResponse;
     should.exist(amountResponse);
     done();
   });
 
-  it('should export lotteryResultsCollectionResponse', function (done) {
+  it('should export lotteryResultsCollectionResponse', done => {
 
-    var lotteryResultsCollectionResponse = index.model.lotteryResultsCollectionResponse;
+    const lotteryResultsCollectionResponse = index.model.lotteryResultsCollectionResponse;
     should.exist(lotteryResultsCollectionResponse);
     done();
   });
 
-  it('should export lotteryTicketsCollectionResponse', function (done) {
+  it('should export lotteryTicketsCollectionResponse', done => {
 
-    var lotteryTicketsCollectionResponse = index.model.lotteryTicketsCollectionResponse;
+    const lotteryTicketsCollectionResponse = index.model.lotteryTicketsCollectionResponse;
     should.exist(lotteryTicketsCollectionResponse);
     done();
   });
 
-  it('should export lotteryTradesCollectionResponse', function (done) {
+  it('should export lotteryTradesCollectionResponse', done => {
 
-    var lotteryTradesCollectionResponse = index.model.lotteryTradesCollectionResponse;
+    const lotteryTradesCollectionResponse = index.model.lotteryTradesCollectionResponse;
     should.exist(lotteryTradesCollectionResponse);
     done();
   });
 
-  it('should export resultPrizeResponse', function (done) {
+  it('should export resultPrizeResponse', done => {
 
-    var resultPrizeResponse = index.model.resultPrizeResponse;
+    const resultPrizeResponse = index.model.resultPrizeResponse;
     should.exist(resultPrizeResponse);
     done();
   });
 
-  it('should export resultPrizeWinnerResponse', function (done) {
+  it('should export resultPrizeWinnerResponse', done => {
 
-    var resultPrizeWinnerResponse = index.model.resultPrizeWinnerResponse;
+    const resultPrizeWinnerResponse = index.model.resultPrizeWinnerResponse;
     should.exist(resultPrizeWinnerResponse);
     done();
   });
 
-  it('should export resultResponse', function (done) {
+  it('should export resultResponse', done => {
 
-    var resultResponse = index.model.resultResponse;
+    const resultResponse = index.model.resultResponse;
     should.exist(resultResponse);
     done();
   });
 
-  it('should export ticketRequest', function (done) {
+  it('should export ticketRequest', done => {
 
-    var ticketRequest = index.model.ticketRequest;
+    const ticketRequest = index.model.ticketRequest;
     should.exist(ticketRequest);
     done();
   });
 
-  it('should export ticketResponse', function (done) {
+  it('should export ticketResponse', done => {
 
-    var ticketResponse = index.model.ticketResponse;
+    const ticketResponse = index.model.ticketResponse;
     should.exist(ticketResponse);
     done();
   });
 
-  it('should export tradeResponse', function (done) {
+  it('should export tradeResponse', done => {
 
-    var tradeResponse = index.model.tradeResponse;
+    const tradeResponse = index.model.tradeResponse;
     should.exist(tradeResponse);
     done();
   });
 
-  it('should export ticketDetailsResponse', function (done) {
+  it('should export ticketDetailsResponse', done => {
 
-    var ticketDetailsResponse = index.model.ticketDetailsResponse;
+    const ticketDetailsResponse = index.model.ticketDetailsResponse;
     should.exist(ticketDetailsResponse);
     done();
   });
 
-  it('should export meta version', function (done) {
+  it('should export meta version', done => {
 
-    var version = index.VERSION;
+    const version = index.VERSION;
     should.exist(version);
     done();
   });

@@ -1,18 +1,18 @@
-var chai = require('chai');
-var should = chai.should();
-var agreementsRequest = require('../../../lib/model/request/agreementsRequest');
+const chai = require('chai');
+const should = chai.should();
+const agreementsRequest = require('../../../lib/model/request/agreementsRequest');
 
-describe('agreementsRequest model test', function () {
+describe('agreementsRequest model test', () => {
 
-  var termsOfService = 'termsOfService';
-  var personalDataProcessing = 'personalDataProcessing';
-  var useMyEffigy = 'useMyEffigy';
+  const termsOfService = 'termsOfService';
+  const personalDataProcessing = 'personalDataProcessing';
+  const useMyEffigy = 'useMyEffigy';
 
-  it('should create model', function (done) {
+  it('should create model', done => {
 
-    var agreementsRequestModel = new agreementsRequest.AgreementsRequest(
-      termsOfService, 
-      personalDataProcessing, 
+    const agreementsRequestModel = new agreementsRequest.AgreementsRequest(
+      termsOfService,
+      personalDataProcessing,
       useMyEffigy
     );
 
@@ -25,7 +25,7 @@ describe('agreementsRequest model test', function () {
 
   it('should create model by builder', function (done) {
 
-    var agreementsRequestModel = new agreementsRequest.AgreementsRequestBuilder()
+    const agreementsRequestModel = new agreementsRequest.AgreementsRequestBuilder()
       .withTermsOfService(termsOfService)
       .withPersonalDataProcessing(personalDataProcessing)
       .withUseMyEffigy(useMyEffigy)

@@ -1,16 +1,16 @@
-var chai = require('chai');
-var should = chai.should();
-var amountResponse = require('../../../lib/model/response/amountResponse');
+const chai = require('chai');
+const should = chai.should();
+const amountResponse = require('../../../lib/model/response/amountResponse');
 
-describe('amountResponse model test', function () {
+describe('amountResponse model test', () => {
 
-  var currency = 'currency';
-  var value = 'value';
+  const currency = 'currency';
+  const value = 'value';
 
-  it('should create model', function (done) {
+  it('should create model', done => {
 
-    var amountResponseModel = new amountResponse.AmountResponse(
-      currency, 
+    const amountResponseModel = new amountResponse.AmountResponse(
+      currency,
       value
     );
 
@@ -22,7 +22,7 @@ describe('amountResponse model test', function () {
 
   it('should create model by builder', function (done) {
 
-    var amountResponseModel = new amountResponse.AmountResponseBuilder()
+    const amountResponseModel = new amountResponse.AmountResponseBuilder()
       .withCurrency(currency)
       .withValue(value)
       .build();

@@ -1,16 +1,18 @@
 {
   "name": "receipts-model",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Receipts model.",
   "main": "./index.js",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "istanbul": "0.4.5",
-    "mocha": "3.2.0"
+    "mocha": "3.2.0",
+    "nsp": "^2.6.2"
   },
   "scripts": {
-    "prepublish": "npm prune",
+    "prepublish": "npm prune && node_modules/nsp/bin/nsp check",
     "test": "mocha --recursive test",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --recursive test",
     "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --recursive test"
@@ -34,9 +36,9 @@
   "license": "MIT",
   "homepage": "https://github.com/receipts/npm-receipts-model",
   "engines": {
-    "node": ">=7.2.0"
+    "node": ">=7.4.0"
   },
   "readmeFilename": "README.md",
-  "_id": "receipts-model@1.7.0",
-  "_from": "receipts-model@^1.7.0"
+  "_id": "receipts-model@1.8.0",
+  "_from": "receipts-model@^1.8.0"
 }
