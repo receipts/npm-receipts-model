@@ -35,5 +35,8 @@
   "undef":      true,
   "unused":     true,
   "maxlen":     140,
-  "latedef":    true
+  "latedef":    true,
+  "globals" : {
+    "require": false
+  }
 }
