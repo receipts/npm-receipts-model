@@ -3,13 +3,12 @@
   "version": "1.8.0",
   "description": "Receipts model.",
   "main": "./index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
     "istanbul": "0.4.5",
     "mocha": "3.2.0",
-    "nsp": "^2.6.2"
+    "nsp": "2.6.3"
   },
   "scripts": {
     "prepublish": "npm prune && node_modules/nsp/bin/nsp check",
